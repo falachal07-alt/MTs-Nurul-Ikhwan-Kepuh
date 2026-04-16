@@ -1,0 +1,188 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Resmi MTs NURUL IKHWAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigasi -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img id="logoSekolah" src="" class="w-10 h-10 rounded-lg object-contain">
+                <h1 class="font-bold text-green-900 tracking-tight">MTs NURUL IKHWAN</h1>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6 text-sm font-bold text-gray-600">
+                <a href="#home" class="hover:text-green-700">Beranda</a>
+                <a href="#visi-misi" class="hover:text-green-700">Visi Misi</a>
+                <a href="#program" class="hover:text-green-700">Program</a>
+                <a href="#fasilitas" class="hover:text-green-700">Fasilitas</a>
+                <a href="#lokasi" class="hover:text-green-700">Lokasi</a>
+                <button onclick="openPPDB()" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition">Daftar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-32 pb-20 text-white px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-5xl font-extrabold leading-tight">MTs Nurul Ikhwan<span class="text-blue-400">
+                    Terakreditasi B.</span></h2>
+                <p class="text-green-100 opacity-80">Berperan serta dalam mencerdaskan anak bangsa dan mengembangkan ajaran Rosulullah SAW.</p>
+                <button onclick="openPPDB()" class="bg-blue-500 text-green-950 px-8 py-4 rounded-2xl font-black text-lg shadow-xl hover:scale-105 transition">DAFTAR SEKARANG</button>
+            </div>
+            <div class="relative">
+                <img id="heroImage" src="" class="w-full rounded-[40px] shadow-2xl border-4 border-white/10 aspect-video object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section id="visi-misi" class="py-24 bg-white px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-green-900 uppercase tracking-widest">Visi & Misi</h2>
+                <div class="w-16 h-1 bg-yellow-500 mx-auto mt-2"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-green-50 p-8 rounded-3xl border-l-8 border-green-700 shadow-sm">
+                    <h4 class="font-bold text-xl text-green-900 mb-4 italic">Visi Kami</h4>
+                    <p class="text-gray-700 leading-relaxed italic">"Terciptanya Generasi Muslim Yang Tangguh, Cerdas, Jujur Beriman Dan Bertaqwa, Berilmu Pengetahuan, Amanah Dan Mandiri Memiliki Kepedulian Sosial Yang Tinggi Kearah Perwujudan Kehidupan Masyarakat Indonesia Yang Di Rhidhoi ALLAH SWT."</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-xl text-green-900 mb-4">Misi Kami</h4>
+                    <div class="flex gap-3 items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                        <p class="text-sm text-gray-600 font-medium">Memperkuat aqidah ilmiah dikalangan generasi muda muslim.</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                        <p class="text-sm text-gray-600 font-medium">Membangun dan membentuk karakter generasi muda muslim yang berakhlakul karimah.</p>
+                    </div>
+                    <div class="flex gap-3 items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                        <p class="text-sm text-gray-600 font-medium"
+                    >Meningkatkan pendidikan dan pengajaran keislaman.</p>
+                    </div>
+                     </div>
+                    <div class="flex gap-3 items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                        <p class="text-sm text-gray-600 font-medium"
+                    >Menumbu kembangkan sikap peduli sosial dan kemasyarakatan.</p>
+                    </div>
+                     </div>
+                    <div class="flex gap-3 items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                        <p class="text-sm text-gray-600 font-medium"
+                    >Membangun dan mempertahankan budaya-budaya islam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-24 bg-gray-100 px-6">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold text-center mb-12 text-green-900 uppercase">Program Unggulan</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
+                    <img id="imgProg1" src="" class="h-52 w-full object-cover group-hover:scale-105 transition">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg mb-2">Nahwu sorof</h4>
+                        <p class="text-xs text-gray-500">Program hafalan intensif dengan bimbingan ustadz berpengalaman.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
+                    <img id="imgProg2" src="" class="h-52 w-full object-cover group-hover:scale-105 transition">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg mb-2">Mengkaji kitab</h4>
+                        <p class="text-xs text-gray-500">Integrasi teknologi dalam setiap mata pelajaran.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
+                    <img id="imgProg3" src="" class="h-52 w-full object-cover group-hover:scale-105 transition">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg mb-2">Sholat Dhuha Dan Muroja'ah Al-Qur'an</h4>
+                        <p class="text-xs text-gray-500">Pengembangan aktif bahasa Arab dan Inggris.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="py-24 bg-green-900 text-white px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-2xl font-bold mb-8 uppercase tracking-widest"><i class="fas fa-tools text-yellow-400"></i> Fasilitas</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/5 font-bold text-sm">Lab Komputer</div>
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/5 font-bold text-sm">Lapangan Olahraga Luas</div>
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/5 font-bold text-sm">Peralatan Olahraga</div>
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/5 font-bold text-sm">Lapangan parkir & Toilet</div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-8 uppercase tracking-widest"><i class="fas fa-users text-yellow-400"></i> Ekskul</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">PRAMUKA</span>
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">PENCAK SILAT</span>
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">TAHFIZ</span>
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">HADROH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi Section -->
+    <section id="lokasi" class="py-24 bg-white px-6 text-center">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold mb-10 text-green-900 uppercase">Lokasi Sekolah</h3>
+            <div class="rounded-[40px] overflow-hidden shadow-2xl h-[450px] border-8 border-gray-50">
+                <iframe id="googleMapsIframe" src="" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Form -->
+    <div id="ppdbOverlay" class="fixed inset-0 z-[200] bg-black/70 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-2xl max-h-[90vh] rounded-[40px] shadow-2xl overflow-hidden flex flex-col scale-90 opacity-0 transition-all duration-300" id="ppdbModal">
+            <div class="p-6 bg-green-800 text-white flex justify-between items-center">
+                <h3 class="text-xl font-bold uppercase italic">Formulir PPDB</h3>
+                <button onclick="closePPDB()" class="text-white/50 hover:text-white"><i class="fas fa-times text-2xl"></i></button>
+            </div>
+            <div class="p-8 overflow-y-auto">
+                <form id="ppdbForm" class="space-y-5">
+                    <input type="text" id="nama" placeholder="Nama Lengkap" class="w-full p-4 rounded-xl bg-gray-50 border outline-none focus:border-green-600 transition" required>
+                    <input type="number" id="nisn" placeholder="NISN" class="w-full p-4 rounded-xl bg-gray-50 border outline-none focus:border-green-600 transition" required>
+                    <input type="text" id="asal" placeholder="Asal Sekolah" class="w-full p-4 rounded-xl bg-gray-50 border outline-none focus:border-green-600 transition" required>
+                    <textarea id="alamat" placeholder="Alamat Lengkap" class="w-full p-4 rounded-xl bg-gray-50 border outline-none focus:border-green-600 transition h-24" required></textarea>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div class="bg-gray-100 p-3 rounded-lg"><label class="text-[9px] font-bold text-gray-400 block mb-1">FOTO BACKGROUND MERAH</label><input type="file" id="fotoSiswa" class="text-[9px]"></div>
+                        <div class="bg-gray-100 p-3 rounded-lg"><label class="text-[9px] font-bold text-gray-400 block mb-1">KARTU KELUARGA</label><input type="file" id="fotoKK" class="text-[9px]"></div>
+                        <div class="bg-gray-100 p-3 rounded-lg"><label class="text-[9px] font-bold text-gray-400 block mb-1">IJAZAH/SKL</label><input type="file" id="fotoIjazah" class="text-[9px]"></div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-green-700 text-white font-bold py-5 rounded-2xl shadow-xl hover:bg-green-800 transition">KIRIM KE WHATSAPP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-green-950 text-white py-12 px-6 text-center">
+        <img id="footerLogo" src="" class="w-10 h-10 mx-auto mb-4 opacity-30 grayscale">
+        <p class="text-[10px] font-bold opacity-30 uppercase tracking-[0.2em]">MTs NURUL IKHW Terakreditasi B&copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
