@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -68,20 +67,15 @@
                     </div>
                     <div class="flex gap-3 items-start">
                         <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                        <p class="text-sm text-gray-600 font-medium"
-                    >Meningkatkan pendidikan dan pengajaran keislaman.</p>
+                        <p class="text-sm text-gray-600 font-medium">Meningkatkan pendidikan dan pengajaran keislaman.</p>
                     </div>
-                     </div>
                     <div class="flex gap-3 items-start">
                         <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                        <p class="text-sm text-gray-600 font-medium"
-                    >Menumbu kembangkan sikap peduli sosial dan kemasyarakatan.</p>
+                        <p class="text-sm text-gray-600 font-medium">Menumbu kembangkan sikap peduli sosial dan kemasyarakatan.</p>
                     </div>
-                     </div>
                     <div class="flex gap-3 items-start">
                         <i class="fas fa-check-circle text-green-600 mt-1"></i>
-                        <p class="text-sm text-gray-600 font-medium"
-                    >Membangun dan mempertahankan budaya-budaya islam.</p>
+                        <p class="text-sm text-gray-600 font-medium">Membangun dan mempertahankan budaya-budaya islam.</p>
                     </div>
                 </div>
             </div>
@@ -96,22 +90,22 @@
                 <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
                     <img id="imgProg1" src="" class="h-52 w-full object-cover group-hover:scale-105 transition">
                     <div class="p-6">
-                        <h4 class="font-bold text-lg mb-2">Nahwu sorof</h4>
-                        <p class="text-xs text-gray-500">Program hafalan intensif dengan bimbingan ustadz berpengalaman.</p>
+                        <h4 class="font-bold text-lg mb-2">Nahwu Shorof</h4>
+                        <p class="text-xs text-gray-500"></p>
                     </div>
                 </div>
                 <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
                     <img id="imgProg2" src="" class="h-52 w-full object-cover group-hover:scale-105 transition">
                     <div class="p-6">
                         <h4 class="font-bold text-lg mb-2">Mengkaji kitab</h4>
-                        <p class="text-xs text-gray-500">Integrasi teknologi dalam setiap mata pelajaran.</p>
+                        <p class="text-xs text-gray-500"></p>
                     </div>
                 </div>
                 <div class="bg-white rounded-3xl overflow-hidden shadow-md group">
                     <img id="imgProg3" src="" class="h-52 w-full object-cover group-hover:scale-105 transition">
                     <div class="p-6">
                         <h4 class="font-bold text-lg mb-2">Sholat Dhuha Dan Muroja'ah Al-Qur'an</h4>
-                        <p class="text-xs text-gray-500">Pengembangan aktif bahasa Arab dan Inggris.</p>
+                        <p class="text-xs text-gray-500"></p>
                     </div>
                 </div>
             </div>
@@ -132,11 +126,11 @@
             </div>
             <div>
                 <h3 class="text-2xl font-bold mb-8 uppercase tracking-widest"><i class="fas fa-users text-yellow-400"></i> Ekskul</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">PRAMUKA</span>
-                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">PENCAK SILAT</span>
-                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">TAHFIZ</span>
-                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold">HADROH</span>
+                <div id="ekskulList" class="flex flex-wrap gap-2">
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold cursor-pointer hover:bg-yellow-400 transition">PRAMUKA</span>
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold cursor-pointer hover:bg-yellow-400 transition">PENCAK SILAT</span>
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold cursor-pointer hover:bg-yellow-400 transition">TAHFIZ</span>
+                    <span class="bg-yellow-500 text-green-950 px-4 py-2 rounded-full text-[10px] font-bold cursor-pointer hover:bg-yellow-400 transition">HADROH</span>
                 </div>
             </div>
         </div>
@@ -152,7 +146,7 @@
         </div>
     </section>
 
-    <!-- Modal Form -->
+    <!-- Modal Form (Hidden) -->
     <div id="ppdbOverlay" class="fixed inset-0 z-[200] bg-black/70 backdrop-blur-md hidden flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-2xl max-h-[90vh] rounded-[40px] shadow-2xl overflow-hidden flex flex-col scale-90 opacity-0 transition-all duration-300" id="ppdbModal">
             <div class="p-6 bg-green-800 text-white flex justify-between items-center">
@@ -166,14 +160,21 @@
                     <input type="text" id="asal" placeholder="Asal Sekolah" class="w-full p-4 rounded-xl bg-gray-50 border outline-none focus:border-green-600 transition" required>
                     <textarea id="alamat" placeholder="Alamat Lengkap" class="w-full p-4 rounded-xl bg-gray-50 border outline-none focus:border-green-600 transition h-24" required></textarea>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                        <div class="bg-gray-100 p-3 rounded-lg"><label class="text-[9px] font-bold text-gray-400 block mb-1">FOTO BACKGROUND MERAH</label><input type="file" id="fotoSiswa" class="text-[9px]"></div>
-                        <div class="bg-gray-100 p-3 rounded-lg"><label class="text-[9px] font-bold text-gray-400 block mb-1">KARTU KELUARGA</label><input type="file" id="fotoKK" class="text-[9px]"></div>
-                        <div class="bg-gray-100 p-3 rounded-lg"><label class="text-[9px] font-bold text-gray-400 block mb-1">IJAZAH/SKL</label><input type="file" id="fotoIjazah" class="text-[9px]"></div>
-                    </div>
-
-                    <button type="submit" class="w-full bg-green-700 text-white font-bold py-5 rounded-2xl shadow-xl hover:bg-green-800 transition">KIRIM KE WHATSAPP</button>
+                    <button type="submit" class="w-full bg-green-700 text-white font-bold py-5 rounded-2xl shadow-xl hover:bg-green-800 transition">LANJUT KE PENDAFTARAN</button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Galeri Ekskul (Baru) -->
+    <div id="galleryOverlay" class="fixed inset-0 z-[300] bg-black/80 backdrop-blur-lg hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-4xl max-h-[85vh] rounded-[30px] shadow-2xl overflow-hidden flex flex-col scale-95 opacity-0 transition-all duration-300" id="galleryModal">
+            <div class="p-5 bg-green-900 text-white flex justify-between items-center">
+                <h3 id="galleryTitle" class="text-lg font-bold uppercase tracking-widest">Galeri Kegiatan</h3>
+                <button onclick="closeGallery()" class="text-white/60 hover:text-white transition"><i class="fas fa-times-circle text-2xl"></i></button>
+            </div>
+            <div id="galleryContent" class="p-6 overflow-y-auto grid grid-cols-2 md:grid-cols-3 gap-4 bg-gray-50 flex-1">
+                <!-- Foto akan muncul di sini secara otomatis -->
             </div>
         </div>
     </div>
@@ -185,4 +186,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+                </html>
+                    
